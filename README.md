@@ -54,6 +54,38 @@ pip install flask
    ```
    http://127.0.0.1:80
    ```
+---
+## Running with Docker
+
+1. **Clone or Download the Repository**
+
+   Clone the repository using Git or download the ZIP file:
+   ```bash
+   git clone <repository-url>
+   cd flask-todo
+   ```
+
+2. **Build the Docker Image**
+
+   Build the Docker image using the following command:
+   ```bash
+   docker build -t flask-app .
+   ```
+
+3. **Run the Docker Container**
+
+   Once the image is built, run the container with the following command:
+   ```bash
+   docker run -p 80:80 flask-app
+   ```
+
+4. **Access the Application**
+
+   Open your web browser and visit:
+   ```bash
+   http://localhost 
+   ```
+
 
 ---
 
@@ -65,6 +97,7 @@ flask-todo/
 ├── app.py            # Main application file
 ├── templates/
 │   └── index.html    # HTML template for the UI
+├── Dockerfile        # Docker configuration file
 └── README.md         # Documentation
 ```
 
